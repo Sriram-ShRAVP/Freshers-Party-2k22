@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <link rel="shortcut icon" href="favicon.jpg" type="image/png"> 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="description"
+         content="As the seniors of SoCSE3 from MRCET are arranging a Fresher's Party to the beloved Juniors on Monday 20th of November 2022...">
+
+      <title>Fresher's Party Invitation</title>
+
+      <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <!-- partial:index.partial.html -->
+      <div class="sakura-falling"></div>
+      <img src="right.png" alt="image-top-right" class="top-right-decoration">
+      <img src="left.png" alt="image-top-left" class="top-left-decoration"> 
+      <section id="media"></section>
+      <div class="wrap">
+         <div class="title">
+            <h1>Third Year's</h1>
+            <h2>OF</h2>
+            <h1>SoCSE3</h1>
+            <h3>Welcome Second year's of SoCSE3 for</h3>
+            <h1>Fresher's Party</h1>
+            <p>
+               on <span class="date">20 November 2022</span></29>, At <span class="place">Placement's Block</span> MRCET.                
+            </p>
+         </div>
+      </div>
+      <div id="time"></div>
+      <p class="dance-med">
+         Lunch & dancing to follow
+      </p>
+      <div class="actions">
+        <a href="https://g.page/MRCET?share" target="_blank">
+          <div class="venue">See The Venue Location🌍</div>
+        </a>
+        <a href="touch.html">
+          <div class="venue">Nothing is Here Don't Click🤪</div>
+        </a>
+      </div>
+      <p class="footer">
+         Can't wait to celebrate auspicious moment of Fresher's Day with all of you!<br>
+         <span></span>
+      </p>
+      <div class="music">
+        <audio src="./mp3/music.mp3" id="my_audio" loop="loop"></audio> 
+      </div>
+      <p class="happiness">Let you know who am I!<br><a href="https://www.linkedin.com/in/sriram-parisa-278516173/" target="_blank" class="twitter"><i class="fa fa-linkedin"></i></a></p>
+      <div class="viddeo" >
+         <video id="vid"  autoplay style="display:none">
+            <source src="" />
+            Your browser does not support the video tag.
+          </video>
+      </div>
+      
+       <button type="button" onclick="show()" id="btnID">Show More</button>
+       <script>
+         function show() {
+            let vid = document.getElementById("vid");
+            vid.src = "get.mp4";
+            document.getElementById('btnID').style.display = "none";
+            vid.style.display = "block";
+         }
+       </script>
+      <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
+      <script  src="./js/script.js"></script>
+   </body>
+</html>
